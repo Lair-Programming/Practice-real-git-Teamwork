@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LibraX | Library Management System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style2.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            LIBRA<span>X</span>
+        </div>
+
+
+        <p class="menu-title">
+            MAIN MENU
+        </p>
+
+
+        <nav>
+
+            <a href="#dashboard" class="nav-link active">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="#books" class="nav-link">
+                <span>▤</span>
+                Books
+            </a>
+
+            <a href="#borrowed" class="nav-link">
+                <span>↗</span>
+                Borrowed
+            </a>
+
+            <a href="#members" class="nav-link">
+                <span>♙</span>
+                Members
+            </a>
+
+        </nav>
+
+
+        <p class="menu-title">
+            SYSTEM
+        </p>
+
+
+        <nav>
+
+            <a href="#" class="nav-link">
+                <span>⚙</span>
+                Settings
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>?</span>
+                Help
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <p>
+                LibraX v1.0
+            </p>
+
+            <small>
+                Team Lair · Thida · Chantea
+            </small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="welcome">
+                    LIBRARY MANAGEMENT
+                </p>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile-avatar">
+                    C
+                </div>
+
+                <div>
+
+                    <strong>
+                        Chantea
+                    </strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================
+             DASHBOARD
+        ========================== -->
+
+        <section id="dashboard">
+
+
+            <!-- STAT CARDS -->
+
+            <div class="stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        📚
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Books
+                        </p>
+
+                        <h2>
+                            1,250
+                        </h2>
+
+                        <small>
+                            +12 this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Available
+                        </p>
+
+                        <h2>
+                            980
+                        </h2>
+
+                        <small>
+                            Books available
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ↗
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Borrowed
+                        </p>
+
+                        <h2>
+                            270
+                        </h2>
+
+                        <small>
+                            Currently borrowed
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ♙
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Members
+                        </p>
+
+                        <h2>
+                            430
+                        </h2>
+
+                        <small>
+                            Registered members
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="section-title">
+
+                <div>
+
+                    <p>
+                        QUICK ACTIONS
+                    </p>
+
+                    <h2>
+                        Manage Library
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+
+                <button class="action-card"
+                        id="addBookBtn">
+
+                    <span>
+                        +
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Add Book
+                        </h3>
+
+                        <p>
+                            Add a new book
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+
+                <button class="action-card"
+                        id="borrowBtn">
+
+                    <span>
+                        ↗
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Borrow Book
+                        </h3>
+
+                        <p>
+                            Create a borrowing
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+
+                <button class="action-card">
+
+                    <span>
+                        ♙
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Add Member
+                        </h3>
+
+                        <p>
+                            Register new member
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             BOOKS
+        ========================== -->
+
+        <section id="books" class="content-section">
+
+
+            <div class="section-title">
+
+                <div>
+
+                    <p>
+                        LIBRARY COLLECTION
+                    </p>
+
+                    <h2>
+                        Books
+                    </h2>
+
+                </div>
+
+
+                <button class="primary-btn"
+                        id="addBookBtn2">
+
+                    + Add Book
+
+                </button>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by title or author..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+
+            <!-- BOOK TABLE -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Book
+                            </th>
+
+                            <th>
+                                Author
+                            </th>
+
+                            <th>
+                                Category
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="bookTable">
+
+
+                        <tr>
+
+                            <td>
+
+                                <strong>
+                                    Clean Code
+                                </strong>
+
+                                <small>
+                                    ISBN: 9780132350884
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Robert C. Martin
+                            </td>
+
+                            <td>
+                                Programming
+                            </td>
+
+                            <td>
+
+                                <span class="status available">
+                                    Available
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="borrow-btn">
+                                    Borrow
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+
+                                <strong>
+                                    JavaScript Guide
+                                </strong>
+
+                                <small>
+                                    ISBN: 9781491952023
+                                </small>
+
+                            </td>
+
+                            <td>
+                                David Flanagan
+                            </td>
+
+                            <td>
+                                Programming
+                            </td>
+
+                            <td>
+
+                                <span class="status borrowed">
+                                    Borrowed
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="disabled-btn">
+                                    Unavailable
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+
+                                <strong>
+                                    HTML & CSS
+                                </strong>
+
+                                <small>
+                                    ISBN: 9781118008188
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Jon Duckett
+                            </td>
+
+                            <td>
+                                Web Development
+                            </td>
+
+                            <td>
+
+                                <span class="status available">
+                                    Available
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="borrow-btn">
+                                    Borrow
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+
+                                <strong>
+                                    Python Basics
+                                </strong>
+
+                                <small>
+                                    ISBN: 9780134692883
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Eric Matthes
+                            </td>
+
+                            <td>
+                                Programming
+                            </td>
+
+                            <td>
+
+                                <span class="status available">
+                                    Available
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="borrow-btn">
+                                    Borrow
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             BORROWED
+        ========================== -->
+
+        <section id="borrowed"
+                 class="content-section">
+
+
+            <div class="section-title">
+
+                <div>
+
+                    <p>
+                        BORROW MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Borrowed Books
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="borrowed-card">
+
+                <div>
+
+                    <h3>
+                        JavaScript Guide
+                    </h3>
+
+                    <p>
+                        Borrowed by: Lair
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Due Date
+                    </p>
+
+                    <strong>
+                        Aug 18, 2026
+                    </strong>
+
+                </div>
+
+
+                <button class="return-btn">
+                    Return
+                </button>
+
+            </div>
+
+
+            <div class="borrowed-card">
+
+                <div>
+
+                    <h3>
+                        Database Design
+                    </h3>
+
+                    <p>
+                        Borrowed by: Thida
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Due Date
+                    </p>
+
+                    <strong>
+                        Aug 20, 2026
+                    </strong>
+
+                </div>
+
+
+                <button class="return-btn">
+                    Return
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             MEMBERS
+        ========================== -->
+
+        <section id="members"
+                 class="content-section">
+
+
+            <div class="section-title">
+
+                <div>
+
+                    <p>
+                        LIBRARY USERS
+                    </p>
+
+                    <h2>
+                        Members
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="members-grid">
+
+
+                <div class="member-card">
+
+                    <div class="member-avatar">
+                        L
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Lair
+                        </h3>
+
+                        <p>
+                            Student ID: ST001
+                        </p>
+
+                        <span>
+                            3 Books Borrowed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="member-card">
+
+                    <div class="member-avatar">
+                        T
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Thida
+                        </h3>
+
+                        <p>
+                            Student ID: ST002
+                        </p>
+
+                        <span>
+                            1 Book Borrowed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="member-card">
+
+                    <div class="member-avatar">
+                        C
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Chantea
+                        </h3>
+
+                        <p>
+                            Student ID: ST003
+                        </p>
+
+                        <span>
+                            2 Books Borrowed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                LibraX Library Management System
+            </p>
+
+            <small>
+                Built by Lair · Thida · Chantea
+            </small>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
