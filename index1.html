@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking System</title>
+    <link rel="stylesheet" href="./CSS/style1.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>RoomBook</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#booking">Booking</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section>
+        <h2>Find Your Perfect Room</h2>
+
+        <p>
+            Book a study room or meeting room quickly and easily.
+        </p>
+
+        <button>Book a Room</button>
+    </section>
+
+
+    <!-- Search -->
+    <section>
+        <h2>Find a Room</h2>
+
+        <form>
+
+            <label for="location">Location:</label>
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter location"
+            >
+
+            <label for="date">Date:</label>
+            <input
+                type="date"
+                id="date"
+            >
+
+            <button type="submit">Search</button>
+
+        </form>
+    </section>
+
+
+    <!-- Rooms -->
+    <section id="rooms">
+
+        <h2>Available Rooms</h2>
+
+        <div>
+
+            <article>
+                <h3>Study Room A01</h3>
+
+                <p>Capacity: 10 people</p>
+                <p>Building: A</p>
+                <p>Status: Available</p>
+
+                <button>Book Now</button>
+            </article>
+
+
+            <article>
+                <h3>Study Room B02</h3>
+
+                <p>Capacity: 15 people</p>
+                <p>Building: B</p>
+                <p>Status: Available</p>
+
+                <button>Book Now</button>
+            </article>
+
+
+            <article>
+                <h3>Meeting Room C01</h3>
+
+                <p>Capacity: 30 people</p>
+                <p>Building: C</p>
+                <p>Status: Available</p>
+
+                <button>Book Now</button>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking -->
+    <section id="booking">
+
+        <h2>Book a Room</h2>
+
+        <form>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <br><br>
+
+            <label for="room">Room:</label>
+
+            <select id="room">
+
+                <option>Study Room A01</option>
+                <option>Study Room B02</option>
+                <option>Meeting Room C01</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="booking-date">Date:</label>
+            <input type="date" id="booking-date">
+
+            <br><br>
+
+            <label for="start">Start Time:</label>
+            <input type="time" id="start">
+
+            <br><br>
+
+            <label for="end">End Time:</label>
+            <input type="time" id="end">
+
+            <br><br>
+
+            <label for="purpose">Purpose:</label>
+            <textarea
+                id="purpose"
+                placeholder="Why do you need this room?"
+            ></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Confirm Booking
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About RoomBook</h2>
+
+        <p>
+            RoomBook is a room booking system that helps
+            students, teachers, and organizations find and
+            reserve rooms easily.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 RoomBook. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
